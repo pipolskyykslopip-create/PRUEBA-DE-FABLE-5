@@ -1,0 +1,7 @@
+# Modelo de voz descargado automáticamente (~40 MB)
+modelos/
+
+__pycache__/
+*.pyc
+.venv/
+venv/

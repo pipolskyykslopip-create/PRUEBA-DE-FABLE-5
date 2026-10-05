@@ -1,0 +1,7 @@
+# Obligatorio: leer el portapapeles
+pyperclip
+
+# Opcionales: dictado por micrófono y atajos de teclado globales
+vosk
+sounddevice
+pynput
