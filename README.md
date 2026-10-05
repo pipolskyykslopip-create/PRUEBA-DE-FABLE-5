@@ -7,7 +7,26 @@ Un programa de terminal, gratis y sin API key, para usar junto a la app de Claud
 
 No usa la API de Anthropic ni ningún servicio pago. Todo corre en tu PC.
 
-## Instalación (Windows)
+## Instalación en Linux (Lubuntu, Ubuntu, Debian)
+
+1. Descargá esta carpeta (botón verde *Code* → *Download ZIP*) y descomprimila, por ejemplo en tu carpeta personal.
+2. Abrí una terminal dentro de la carpeta (clic derecho → *Abrir terminal aquí*) y ejecutá:
+
+   ```
+   ./escuchar_claude.sh --probar
+   ```
+
+   La primera vez instala lo que falta (te pide tu contraseña para `apt`), crea un entorno de Python e instala las librerías. Al final dice una frase de prueba en voz alta.
+
+3. De ahí en más, para arrancarlo:
+
+   ```
+   ./escuchar_claude.sh
+   ```
+
+   Si al hacer doble clic en el archivo se abre un editor en vez de ejecutarse, usalo desde la terminal.
+
+## Instalación en Windows
 
 1. Instalá Python desde <https://www.python.org/downloads/>. En el instalador marcá **"Add python.exe to PATH"**.
 2. Descargá esta carpeta (botón verde *Code* → *Download ZIP*) y descomprimila.
@@ -28,7 +47,7 @@ No usa la API de Anthropic ni ningún servicio pago. Todo corre en tu PC.
 ## Uso diario
 
 1. Abrí la app de Claude como siempre.
-2. Hacé doble clic en `escuchar_claude.bat` (o ejecutá `python escuchar_claude.py`). Dejá esa ventana abierta.
+2. Arrancá el programa: en Linux `./escuchar_claude.sh`, en Windows doble clic en `escuchar_claude.bat`. Dejá esa ventana abierta.
 3. Cuando Claude responda, pasá el mouse por debajo de la respuesta y apretá el botón **Copiar**. La respuesta empieza a sonar enseguida.
 4. Para contestarle con la voz: hacé clic en la caja de texto de Claude, apretá **Ctrl+Alt+H**, hablá, y volvé a apretar **Ctrl+Alt+H**. El texto se pega solo. Revisalo y apretá Enter.
 
@@ -71,10 +90,10 @@ Los bloques de código se saltean por defecto (se escucha "Bloque de código omi
 
 **macOS.** Usa el comando `say` con la primera voz en español instalada (Mónica, Paulina…). Podés agregar más en *Ajustes → Accesibilidad → Contenido hablado → Voz del sistema*.
 
-**Linux.** Necesita `espeak-ng`:
+**Linux.** Usa `espeak-ng` con la voz latinoamericana (`es-419`). Para la de España: `./escuchar_claude.sh --voz es`. Si lo instalaste a mano y falta algo:
 
 ```
-sudo apt install espeak-ng xclip
+sudo apt install espeak-ng xclip python3-venv libportaudio2
 ```
 
 ## Dictado por micrófono
@@ -93,5 +112,5 @@ El dictado funciona bien con frases claras y a velocidad normal. Mientras grabá
 
 - **No pasa nada al copiar.** Revisá que el programa esté abierto y que no esté en pausa (tecla `p`). Copiá con el botón *Copiar* de Claude o con Ctrl+C sobre el texto seleccionado.
 - **Habla en inglés.** No hay voz en español instalada; mirá la sección *Voz en español*.
-- **Los atajos globales no funcionan.** Usá las teclas dentro de la ventana del programa, o reinstalá `pynput`. En macOS hay que darle permiso a la terminal en *Ajustes → Privacidad y seguridad → Accesibilidad*.
+- **Los atajos globales no funcionan.** Usá las teclas dentro de la ventana del programa, o reinstalá `pynput`. En Linux funcionan con sesión X11 (la normal de Lubuntu), no con Wayland. En macOS hay que darle permiso a la terminal en *Ajustes → Privacidad y seguridad → Accesibilidad*.
 - **No me reconoce el micrófono.** Revisá que Windows tenga permitido el acceso al micrófono para aplicaciones de escritorio (*Configuración → Privacidad → Micrófono*).

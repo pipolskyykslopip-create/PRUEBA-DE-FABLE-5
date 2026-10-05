@@ -179,7 +179,8 @@ $s.Speak($t)
                 cmd += ["-v", self.nombre_voz]
             return cmd
 
-        cmd = [self.binario, "-v", self.nombre_voz or "es", "-s", str(self._palabras_por_minuto()), "--stdin"]
+        # "es-419" es español latinoamericano; con --voz es se usa el de España.
+        cmd = [self.binario, "-v", self.nombre_voz or "es-419", "-s", str(self._palabras_por_minuto()), "--stdin"]
         return cmd
 
     # ---- acciones -------------------------------------------------------
