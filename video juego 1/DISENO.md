@@ -27,12 +27,12 @@ Todo el diseño parte de que el juego tiene que andar bien en tu notebook: Celer
 - **Clic izquierdo** sobre un escuadrón propio lo selecciona. Con **Shift + clic** sumás otro a la selección.
 - **Arrastrar** con el botón apretado dibuja un rectángulo y selecciona todo lo que quede adentro.
 - Con algo seleccionado, **clic en el terreno** lo manda a moverse y **clic sobre un enemigo** lo manda a atacar. No hace falta el botón derecho.
-- **Arrastrar desde un escuadrón seleccionado con `Alt` apretado**: el escuadrón se mueve y queda mirando hacia donde arrastraste.
+- **Arrastrar con `Alt` o `Ctrl` apretado**: el escuadrón se mueve y queda mirando hacia donde arrastraste. Se acepta `Ctrl` porque en algunos escritorios de Ubuntu `Alt` + arrastrar mueve la ventana.
 - **Flechas o `WASD`** mueven la cámara. Llevar el puntero al borde de la pantalla también la mueve, y eso se puede apagar.
 - **`+` / `-`** acercan y alejan la cámara (tres niveles).
 - **`Espacio`** pausa. Con el juego pausado podés dar órdenes.
 - **`1`–`5`** cambian la formación: línea, columna, cuña, testudo y orden abierto.
-- **`H`** detiene, **`R`** hace correr al escuadrón (cansa más) y **`Ctrl+1..9`** guarda un grupo que después recuperás con `1..9`.
+- **`H`** detiene, **`R`** hace correr al escuadrón (cansa más), **`Q`/`E`** giran 45° y **`Shift+6..9`** guarda un grupo que después recuperás con `6..9`. Chrome usa `Ctrl+1..9` para cambiar de pestaña, por eso no se usa ese atajo.
 - **`Tab`** pasa al siguiente escuadrón y **`F3`** muestra los fps.
 
 **Campaña:** con clic seleccionás un ejército o una región y con otro clic en una región vecina lo movés. **`Enter`** termina el turno. Todos los botones son grandes y se pueden clickear, y nada depende de pasar el puntero por encima.

@@ -1,0 +1,120 @@
+<title>Alea iacta est</title>
+<meta name="description" content="Juego de estrategia sobre la vida de Julio César. Libro primero: El ascenso.">
+<style>
+/*CSS*/
+</style>
+
+<div id="app">
+  <section id="menu" class="screen">
+    <div class="m-wrap">
+      <div class="m-title">
+        <div class="m-liber">Liber primus · El ascenso</div>
+        <h1 class="inscr">ALEA<br>IACTA EST</h1>
+        <p class="m-tag">La vida de Cayo Julio César, del proscrito de Sila al dueño de Roma. Estrategia por turnos en el mapa y batallas en tiempo real.</p>
+        <div id="menu-actions" class="m-actions"></div>
+      </div>
+      <aside class="m-index" aria-label="Capítulos del libro primero">
+        <h2>Libro primero · capítulos</h2>
+        <ol class="chapters">
+          <li><span class="n">I</span><span class="t">Proscrito</span><span class="d">82–81 a.C.</span></li>
+          <li><span class="n">II</span><span class="t">Mitilene</span><span class="d">80 a.C.</span></li>
+          <li><span class="n">III</span><span class="t">El juicio de Dolabela</span><span class="d">77 a.C.</span></li>
+          <li><span class="n">IV</span><span class="t">Los piratas</span><span class="d">75 a.C.</span></li>
+          <li><span class="n">V</span><span class="t">Asia</span><span class="d">74 a.C.</span></li>
+          <li><span class="n">VI</span><span class="t">Espartaco</span><span class="d">73–71 a.C.</span></li>
+          <li><span class="n">VII</span><span class="t">La estatua de Alejandro</span><span class="d">69 a.C.</span></li>
+          <li><span class="n">VIII</span><span class="t">Pontífice máximo</span><span class="d">63 a.C.</span></li>
+          <li class="open"><span class="n">IX</span><span class="t">Lusitania</span><span class="d">61 a.C.</span></li>
+          <li><span class="n">X</span><span class="t">Triunfo o consulado</span><span class="d">60 a.C.</span></li>
+        </ol>
+        <p class="m-note">Por ahora se juega el capítulo IX. Los demás llegan en las próximas entregas.</p>
+      </aside>
+    </div>
+    <footer class="m-foot">Plutarco y Suetonio como fuentes · Tipografías Cinzel y Alegreya (SIL OFL) · Funciona sin conexión</footer>
+  </section>
+
+  <section id="intro" class="screen" hidden>
+    <article class="page">
+      <div class="i-book kicker"></div>
+      <div class="i-num"></div>
+      <h1 class="i-title"></h1>
+      <div class="i-place"></div>
+      <div class="i-body"></div>
+      <p class="i-src src"></p>
+      <div class="i-goal">
+        <h3>Objetivo</h3>
+        <ul class="i-obj"></ul>
+        <p class="i-dead"></p>
+      </div>
+      <button id="i-go" class="mbtn primary"><span>Empezar la campaña</span><small>Hispania Ulterior, 61 a.C.</small></button>
+    </article>
+  </section>
+
+  <section id="campaign" class="screen" hidden>
+    <div class="c-map"><canvas id="ccv"></canvas></div>
+    <aside class="c-panel">
+      <header class="c-date"></header>
+      <section class="c-stats"></section>
+      <section class="c-sel"></section>
+      <section class="c-goals"></section>
+      <section class="c-log"></section>
+      <footer class="c-foot">
+        <button id="c-end" class="mbtn primary"><span>Terminar el turno</span><small>Enter</small></button>
+        <div class="c-row">
+          <button id="c-menu" class="ghost">Menú</button>
+          <button id="c-help" class="ghost">Cómo se juega</button>
+        </div>
+      </footer>
+    </aside>
+  </section>
+
+  <section id="loading" class="screen" hidden>
+    <div class="load"><div class="inscr small">ALEA IACTA EST</div><p>Preparando el campo de batalla…</p></div>
+  </section>
+
+  <section id="battle" class="screen" hidden>
+    <canvas id="bcv"></canvas>
+    <div class="b-top">
+      <div class="b-title"></div>
+      <div class="b-forces" title="Balance de fuerzas"><span class="f-me"></span></div>
+      <div class="b-clock"></div>
+      <div class="b-btns">
+        <button id="b-pause" class="ghost">❚❚ Pausa</button>
+        <button id="b-speed" class="ghost">×1</button>
+        <button id="b-zout" class="ghost" title="Alejar (−)">−</button>
+        <button id="b-zin" class="ghost" title="Acercar (+)">+</button>
+        <button id="b-help" class="ghost">Controles</button>
+        <button id="b-retreat" class="ghost">Retirada</button>
+      </div>
+    </div>
+    <div class="b-deploy">
+      <p><b>Despliegue.</b> Ubicá tus tropas dentro de la zona dorada: seleccioná y hacé clic donde quieras ponerlas. Q y E giran.</p>
+      <button id="b-go" class="mbtn primary"><span>¡A la batalla!</span><small>Enter</small></button>
+    </div>
+    <div class="b-toasts"></div>
+    <div class="b-fps" hidden></div>
+    <div class="b-bottom">
+      <div class="b-roster"></div>
+      <div class="b-cmds"></div>
+      <canvas id="b-mini" width="200" height="140" title="Mapa: clic para mover la cámara"></canvas>
+    </div>
+  </section>
+
+  <section id="ending" class="screen" hidden>
+    <article class="page">
+      <div class="e-kicker kicker"></div>
+      <h1 class="e-title"></h1>
+      <div class="e-body"></div>
+      <div class="e-stats report"></div>
+      <div class="e-note"></div>
+      <p class="e-next">Próximo capítulo: <b>X · Triunfo o consulado</b> (60 a.C.). Llega en una próxima entrega.</p>
+      <div class="e-actions"></div>
+    </article>
+  </section>
+</div>
+<div id="modal" hidden></div>
+<div id="toasts"></div>
+
+<script>
+/*JS*/
+</script>
