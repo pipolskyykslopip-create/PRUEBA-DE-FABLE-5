@@ -68,26 +68,70 @@ Todo el diseño parte de que el juego tiene que andar bien en tu notebook: Celer
   - **Ríos:** solo se cruzan por los vados, y quien cruza pelea con desventaja.
 - **IA enemiga:** máquina de estados por escuadrón (avanzar, sostener la línea, flanquear, retirarse), más un "plan" de batalla distinto en cada capítulo.
 
-## 5. Capítulos
+## 5. La saga: un juego por etapa
 
-Cada capítulo empieza con una introducción de 2–3 párrafos basada en Plutarco (*Vida de César*) y Suetonio (*Divino Julio*). Al escribir cada uno voy a cotejar el texto con las fuentes y anotar la cita (capítulo y párrafo) en una nota al pie dentro del juego.
+La vida de César se divide en **tres juegos**, cada uno con sus capítulos, como una serie de novelas. La estructura se inspira en la serie de Santiago Posteguillo sobre César:
+- un primer ciclo de **ascenso** (en sus novelas, la *Trilogía del Ascenso*, que termina en el 58 a.C. con la Galia);
+- **varias líneas narrativas en paralelo**, como Roma, la Galia y Egipto en *Los tres mundos*;
+- el **juicio como thriller** de *Roma soy yo*;
+- la **ironía dramática**: el lector sabe lo que el personaje todavía no sabe.
 
-| # | Capítulo | Objetivo jugable | Fuentes |
-|---|---|---|---|
-| 0 | **Los piratas** (75 a.C.), como tutorial | En un islote con pocas tropas aprendés seleccionar, mover, cambiar formación y flanquear. Después atacás la guarida pirata con la flota que juntaste en Mileto. | Plut. *Caes.* 2; Suet. *Iul.* 4 y 74 |
-| 1 | **Los helvecios** (58 a.C.) | Primero, en la campaña, alcanzar a los helvecios antes de que se instalen en la Galia. Después, la batalla: resistir el choque desde la colina, aguantar el ataque de flanco de los boyos y los tulingos, y romper la barricada de carros. | Plut. *Caes.* 18; César, *BG* I (como apoyo) |
-| 2 | **Alesia** (52 a.C.) | Asedio con **doble línea**: la de adentro encierra a Vercingétorix y la de afuera frena al ejército galo que viene a rescatarlo. Hay que llevar las reservas de un punto a otro sin que se rompa ninguna de las dos. | Plut. *Caes.* 26–27 |
-| 3 | **El Rubicón** (49 a.C.) | Una **decisión** sin batalla. Según tu *dignitas*, el dinero y la lealtad de tus legiones, elegís cruzar o no. Si no cruzás, ves un final alternativo corto. Si cruzás, sigue la campaña por Italia. | Plut. *Caes.* 32; Suet. *Iul.* 31–33 |
-| 4 | **Farsalia** (48 a.C.) | Pelear contra un ejército que te duplica. El truco histórico es esconder una **cuarta línea** de cohortes para frenar a la caballería de Pompeyo, y eso hay que descubrirlo y aplicarlo. | Plut. *Caes.* 42–45, *Pomp.* 68–72; Suet. *Iul.* 35 |
-| 5 | **Zela** (47 a.C.) | Batalla corta con límite de tiempo, en la que Fárnaces ataca colina arriba con **carros falcados**. Si ganás rápido, se desbloquea el "*veni, vidi, vici*". | Plut. *Caes.* 50; Suet. *Iul.* 35 y 37 |
-| 6 | **Munda** (45 a.C.) | La batalla más dura, contra los hijos de Pompeyo y Labieno. La moral está muy pareja y el general tiene que meterse en la primera línea en el momento justo. | Plut. *Caes.* 56; Suet. *Iul.* 36 |
-| 7 | **Los Idus de marzo** (44 a.C.) | Un **epílogo narrativo** sin combate. Pasás por avisos y decisiones: Espurina, Calpurnia, la nota de Artemidoro. La historia termina igual, pero lo que elegiste cambia el texto final y la evaluación de tu carrera. | Plut. *Caes.* 63–66; Suet. *Iul.* 81–82 |
+Los textos, los títulos y los diálogos son nuestros. No copio nada de las novelas.
 
-**Nota histórica sobre los "galos con carros":** en el 58 a.C. los galos del continente ya no usaban carros de guerra (los que sí los usaban eran los britanos). Lo que tenían los helvecios era una **barricada de carretas** donde estaban sus familias. Por eso propongo:
-- en Helvecios, la barricada de carretas como fortificación que hay que asaltar;
-- en Zela, los **carros falcados** del Ponto, que ahí sí son históricos.
+### Recursos narrativos de cada juego
 
-Si preferís tener carros de guerra galos igual, se pueden agregar marcados como licencia histórica.
+- **Libro y capítulos.** Cada capítulo abre con un rótulo de lugar y fecha (por ejemplo: *Gades, Hispania Ulterior, 69 a.C.*) y una introducción de 2–3 párrafos basada en Plutarco y Suetonio, con la cita al pie.
+- **Interludios paralelos.** Entre capítulo y capítulo aparecen escenas cortas de **otras líneas**: Roma (Pompeyo, Craso, Cicerón, Clodio), la familia (Aurelia, Cornelia, Julia) y Egipto (Ptolomeo, Cleopatra). Son solo texto con una decisión que afecta la *dignitas*, el dinero o la lealtad, así que no cuestan rendimiento.
+- **Ironía dramática.** Los interludios te muestran cosas que César no sabe, como una traición que se arma en Roma o un aliado que duda.
+- **Final con gancho.** Cada juego termina con una gran decisión que lleva al siguiente.
+- **Nota histórica final.** Al terminar cada juego, un apartado explica qué pasó de verdad y qué es licencia del juego.
+- **Tu partida continúa.** Al final de cada juego se exporta un "legado" (fama, legiones veteranas, deudas y alianzas) que se importa en el juego siguiente.
+
+### Juego I — *Alea iacta est: El ascenso* (82–60 a.C.)
+
+| # | Capítulo | Tipo | Objetivo jugable | Fuentes |
+|---|---|---|---|---|
+| 1 | **Proscrito** (82–81) | Decisión y huida | No repudiar a Cornelia, huir de los hombres de Sila por el mapa de Italia y conseguir el perdón. | Suet. 1; Plut. 1 |
+| 2 | **Mitilene** (80) | Batalla, como **tutorial** | Asalto en el que aprendés seleccionar, mover y armar formaciones. Si salvás a un ciudadano, ganás la corona cívica. | Suet. 2 |
+| 3 | **El juicio de Dolabela** (77) | Juicio | Un minijuego de oratoria con testigos, pruebas y un jurado comprado. Se puede perder el juicio y aun así ganar fama, como pasó de verdad. | Suet. 4; Plut. 4 |
+| 4 | **Los piratas** (75) | Batalla | El rescate de 50 talentos y después la venganza: atacar la guarida pirata con la flota de Mileto. | Plut. 2; Suet. 4 y 74 |
+| 5 | **Asia** (74) | Batalla | Por iniciativa propia, reclutás tropas auxiliares contra un prefecto de Mitrídates. | Suet. 4 |
+| 6 | **Espartaco** (73–71) | Batalla, *licencia* | Ninguna fuente antigua dice que César haya peleado contra Espartaco. Lo propongo como capítulo opcional y marcado como licencia. | Plut. *Craso* 8–11 (contexto) |
+| 7 | **La estatua de Alejandro** (69) | Interludio | Cuestor en Gades: la crisis de los 30 años y la ambición. | Suet. 7 |
+| 8 | **Pontífice máximo** (63) | Campaña política | Elecciones, deudas con Craso y el debate de los catilinarios en el Senado. | Suet. 13–14; Plut. 7–8 |
+| 9 | **Lusitania** (61) | Campaña y batallas | Como propretor de Hispania Ulterior, campaña contra lusitanos y galaicos hasta el océano. Te aclaman *imperator*. | Plut. 12; Suet. 18 |
+| 10 | **Triunfo o consulado** (60) | Decisión final | Para tener el triunfo había que esperar afuera de Roma, y para ser candidato a cónsul había que entrar. César renunció al triunfo. **Gancho:** el pacto con Pompeyo y Craso y la Galia en el horizonte. | Plut. 13; Suet. 18–19 |
+
+### Juego II — *Alea iacta est: Las Galias* (58–50 a.C.)
+
+**Capítulos:**
+- los helvecios, con la barricada de carretas;
+- Ariovisto;
+- los nervios en el Sabis;
+- Britania, con los **carros de guerra britanos**, que ahí sí son históricos;
+- Alesia, con la doble línea de fortificaciones.
+
+**Líneas paralelas:** Roma (Clodio, la muerte de Julia, Craso en Carras) y Egipto (el exilio de Ptolomeo y Cleopatra).
+
+**Final:** el Rubicón, como decisión.
+
+### Juego III — *Alea iacta est: La guerra civil* (49–44 a.C.)
+
+**Capítulos:**
+- Dirraquio;
+- Farsalia, con la cuarta línea;
+- Alejandría y Cleopatra;
+- Zela, con los carros falcados y el *veni, vidi, vici*;
+- Munda.
+
+**Epílogo:** los Idus de marzo, como capítulo narrativo de decisiones.
+
+Las fuentes de los juegos II y III son las de la versión anterior de este documento. Las detallo cuando arranquemos cada juego.
+
+**Sobre los carros:** con esta división cada carro cae en su lugar histórico, así que no hace falta ninguna licencia.
+- Helvecios: carretas que forman una barricada.
+- Britania: carros de guerra.
+- Zela: carros falcados.
 
 ## 6. Estilo visual y sonido
 
@@ -111,28 +155,29 @@ Si preferís tener carros de guerra galos igual, se pueden agregar marcados como
 
 ## 8. Entregas
 
+Todos los juegos comparten **el mismo motor**. Cada juego es un archivo `.html` aparte y cada entrega agrega uno o dos capítulos ya probados.
+
 | Fase | Contenido | Cómo se verifica |
 |---|---|---|
-| **1 — Mínimo jugable** | Mapa chico (6 regiones: Italia, Cisalpina, Narbonense, Helvecia, Bibracte y Belgica), recursos, reclutamiento, movimiento, lealtad, guardado y dificultad. Una batalla completa: los helvecios. | Pruebas automatizadas en Chrome (clics, arrastre y teclado) y fps medidos con la CPU frenada, con 200 soldados en pantalla. |
-| **2** | Alesia | Ídem |
-| **3** | Rubicón y mapa completo | Ídem |
-| **4** | Farsalia | Ídem |
-| **5** | Zela | Ídem |
-| **6** | Munda | Ídem |
-| **7** | Prólogo de los piratas (tutorial) e Idus de marzo | Ídem |
+| **1 — Mínimo jugable** | El motor completo más el capítulo **Lusitania (61)** del Juego I. Incluye un mapa chico de Hispania (6 regiones: Bética, Gades, Lusitania, Callaecia, Carpetania y el océano), recursos, reclutamiento, movimiento, lealtad, guardado y dificultad. También una batalla completa contra los lusitanos, que usan emboscadas en las colinas, caballería ligera y un río. | Pruebas automatizadas en Chrome (clics, arrastre y teclado) y fps medidos con la CPU frenada, con 200 soldados en pantalla. |
+| **2** | Mitilene (tutorial) y Los piratas | Ídem |
+| **3** | El juicio de Dolabela | Ídem |
+| **4** | Proscrito, Asia y la estatua de Alejandro | Ídem |
+| **5** | Pontífice máximo y Triunfo o consulado. **Juego I completo** | Ídem |
+| **6 en adelante** | Juego II, capítulo por capítulo, y después el Juego III | Ídem |
 
-El tutorial va al final aunque en el juego sea el primer capítulo: conviene escribirlo cuando las mecánicas ya no cambien.
+**Por qué Lusitania va primero:** es el único capítulo del Juego I que usa a la vez el mapa de campaña, la lealtad de las legiones y una batalla grande. Si el motor aguanta ahí, aguanta todo lo demás.
 
 **Formato de cada entrega:**
 - Una versión publicada para abrir en el navegador.
-- El archivo `alea-iacta-est.html` en esta carpeta, para descargar y abrir sin conexión con doble clic.
+- El archivo `alea-iacta-est-1.html` en esta carpeta, para descargar y abrir sin conexión con doble clic.
 - Un informe corto de las pruebas y los fps.
 
 ---
 
 ### Para que decidas
 
-1. ~~Nombre~~ → **Alea iacta est** (decidido)
-2. ¿Aceptás reemplazar los "galos con carros" por la barricada de carretas y los carros falcados en Zela? ¿O preferís tener carros galos como licencia histórica?
-3. ¿Está bien que el tutorial de los piratas se haga recién en la última entrega?
-4. ¿Te sirve que el Rubicón y los Idus sean capítulos de decisiones, sin batalla?
+1. ~~Nombre~~ → **Alea iacta est** (decidido).
+2. ¿Te sirve la división en **3 juegos**: Ascenso, Galias y Guerra civil?
+3. ¿Arrancamos la Fase 1 con **Lusitania (61)**, o preferís que la primera batalla sea otra?
+4. Espartaco: ¿lo incluyo como capítulo opcional marcado como licencia, o lo saco?
