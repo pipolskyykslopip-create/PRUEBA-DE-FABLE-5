@@ -1,4 +1,4 @@
-# ALEA — La vida de Julio César
+# Alea iacta est — La vida de Julio César
 
 Documento de diseño (Fase 0). Para aprobar antes de programar.
 
@@ -125,14 +125,14 @@ El tutorial va al final aunque en el juego sea el primer capítulo: conviene esc
 
 **Formato de cada entrega:**
 - Una versión publicada para abrir en el navegador.
-- El archivo `alea.html` en esta carpeta, para descargar y abrir sin conexión con doble clic.
+- El archivo `alea-iacta-est.html` en esta carpeta, para descargar y abrir sin conexión con doble clic.
 - Un informe corto de las pruebas y los fps.
 
 ---
 
 ### Para que decidas
 
-1. ¿Te sirve el nombre "**ALEA**"?
+1. ~~Nombre~~ → **Alea iacta est** (decidido)
 2. ¿Aceptás reemplazar los "galos con carros" por la barricada de carretas y los carros falcados en Zela? ¿O preferís tener carros galos como licencia histórica?
 3. ¿Está bien que el tutorial de los piratas se haga recién en la última entrega?
 4. ¿Te sirve que el Rubicón y los Idus sean capítulos de decisiones, sin batalla?
