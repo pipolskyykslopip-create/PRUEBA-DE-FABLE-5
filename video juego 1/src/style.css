@@ -200,7 +200,7 @@ kbd { font-family: var(--font-body); font-weight: 700; background: #f6efda; bord
   .page { margin: 16px; padding: 28px 22px; }
   .page h1 { font-size: 34px; }
   .b-bottom { grid-template-columns: 1fr; }
-  #b-mini { display: none; }
+  #b-mini { position: fixed; top: 92px; right: 8px; width: 132px; height: 92px; z-index: 5; }
   .b-cmds { grid-template-columns: repeat(3, auto); }
 }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
